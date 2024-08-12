@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Toast Notification Container -->
+    <div id="toast" class="toast"></div>
+    <div class="container">
+        <h1>Google Search Pro</h1>
+        <form id="dorking-form">
+            <input type="text" id="query" placeholder="Enter your search query">
+
+            <select id="category">
+                <option value="">Category</option>
+                <option value="book">Book</option>
+                <option value="music">Music</option>
+                <option value="video">Video</option>
+            </select>
+
+            <select id="filetype">
+                <option value="">File Type</option>
+            </select>
+
+            <input type="text" id="site" placeholder="Site (optional)">
+
+            <select id="sort">
+                <option value="">Relevance</option>
+                <option value="date">Date</option>
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
