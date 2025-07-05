@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://googlesearchpro.netlify.app/sitemap.xml
+
+# SEO crawling directives
+Crawl-delay: 1
+
+# Allow all important pages
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /manifest.json
+
+# Disallow any potential admin or config files
+Disallow: /admin/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /*.log

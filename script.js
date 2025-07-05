@@ -288,8 +288,125 @@ document.getElementById('category').addEventListener('change', function () {
     generateQueryPreview();
 });
 
-// Add event listeners for real-time query preview
+// SEO and Performance Enhancements
 document.addEventListener('DOMContentLoaded', function() {
+    // Update page title dynamically based on user input
+    function updatePageTitle() {
+        const query = document.getElementById('query').value.trim();
+        const category = document.getElementById('category').value;
+        
+        let title = 'Google Search Pro - Advanced Google Dorking Tool';
+        
+        if (query || category) {
+            title = `${query ? query + ' ' : ''}${category ? category + ' ' : ''}Search - Google Search Pro`;
+        }
+        
+        document.title = title;
+    }
+    
+    // Add structured data for better SEO
+    function addStructuredData() {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://googlesearchpro.netlify.app/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        });
+        document.head.appendChild(script);
+    }
+    
+    // Performance optimization - lazy load non-critical resources
+    function loadNonCriticalResources() {
+        // Pre-connect to external domains
+        const preconnects = [
+            'https://www.google.com',
+            'https://fonts.googleapis.com',
+            'https://fonts.gstatic.com'
+        ];
+        
+        preconnects.forEach(href => {
+            const link = document.createElement('link');
+            link.rel = 'preconnect';
+            link.href = href;
+            document.head.appendChild(link);
+        });
+    }
+    
+    // Track user interactions for SEO insights
+    function trackUserInteractions() {
+        // Track search attempts
+        document.getElementById('dorking-form').addEventListener('submit', function() {
+            // This would integrate with Google Analytics if enabled
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'search', {
+                    'event_category': 'engagement',
+                    'event_label': 'google_dork_search'
+                });
+            }
+        });
+        
+        // Track category selections
+        document.getElementById('category').addEventListener('change', function() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'category_select', {
+                    'event_category': 'engagement',
+                    'event_label': this.value
+                });
+            }
+        });
+    }
+    
+    // Optimize images and resources
+    function optimizeResources() {
+        // Add loading="lazy" to images if they exist
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            if (!img.hasAttribute('loading')) {
+                img.setAttribute('loading', 'lazy');
+            }
+        });
+    }
+    
+    // Initialize SEO enhancements
+    function initSEOEnhancements() {
+        addStructuredData();
+        loadNonCriticalResources();
+        trackUserInteractions();
+        optimizeResources();
+        
+        // Update title on input changes
+        const inputs = ['query', 'category'];
+        inputs.forEach(inputId => {
+            const element = document.getElementById(inputId);
+            if (element) {
+                element.addEventListener('input', updatePageTitle);
+                element.addEventListener('change', updatePageTitle);
+            }
+        });
+    }
+    
+    // Service Worker registration for PWA and caching
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function(registration) {
+                    console.log('ServiceWorker registration successful');
+                })
+                .catch(function(err) {
+                    console.log('ServiceWorker registration failed');
+                });
+        });
+    }
+    
+    // Initialize all SEO enhancements
+    initSEOEnhancements();
+    
+    // Existing initialization code...
     const inputs = ['query', 'category', 'filetype', 'site', 'sort', 'size'];
     
     inputs.forEach(inputId => {

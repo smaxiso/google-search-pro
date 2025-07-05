@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Google Search Pro</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Google Search Pro to build advanced search queries.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://googlesearchpro.netlify.app/">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .error-code {
+            font-size: 6rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            color: var(--on-surface);
+            margin-bottom: 30px;
+        }
+        .error-description {
+            color: var(--on-surface-variant);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            background: var(--primary);
+            color: var(--on-primary);
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .back-button:hover {
+            background: color-mix(in srgb, var(--primary) 85%, black);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-container">
+            <div class="error-code">404</div>
+            <h1 class="error-message">Page Not Found</h1>
+            <p class="error-description">
+                Sorry, the page you're looking for doesn't exist. 
+                Let's get you back to building powerful Google search queries.
+            </p>
+            <a href="/" class="back-button">
+                <span class="material-icons">home</span>
+                Back to Google Search Pro
+            </a>
+        </div>
+    </div>
+</body>
+</html>

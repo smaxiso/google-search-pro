@@ -1,7 +1,14 @@
 Google Search Pro
 =================
 
+**🌐 [Try it Live: https://googlesearchpro.netlify.app/](https://googlesearchpro.netlify.app/)**
+
 **Google Search Pro** is a sophisticated web application that enhances Google searches by providing an intuitive interface for building advanced Google dork queries. With a modern Material Design 3 interface and powerful search capabilities, it makes complex search operations accessible to everyone.
+
+## 🔗 Quick Links
+- **🚀 Live Demo**: [https://googlesearchpro.netlify.app/](https://googlesearchpro.netlify.app/)
+- **📂 Source Code**: [GitHub Repository](https://github.com/sumitcr7/google-search-pro)
+- **📖 Documentation**: This README
 
 🚀 Features
 --------
@@ -79,9 +86,25 @@ Google Search Pro
 🚀 Getting Started
 ---------------
 
-1. **Clone or Download**: Get the project files
-2. **Open**: Simply open `index.html` in any modern web browser
-3. **Search**: Start building your advanced Google searches immediately
+### 🌐 **Try Online (Recommended)**
+**Visit: [https://googlesearchpro.netlify.app/](https://googlesearchpro.netlify.app/)**
+- No installation required
+- Always up-to-date
+- Fast loading via CDN
+- Mobile-friendly
+
+### 💻 **Local Development**
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/sumitcr7/google-search-pro.git
+   ```
+2. **Navigate to project directory**:
+   ```bash
+   cd google-search-pro
+   ```
+3. **Open in browser**:
+   - Simply open `index.html` in any modern web browser
+   - Or use a local server: `python -m http.server 8000`
 
 No installation, no dependencies, no server required!
 
@@ -121,36 +144,21 @@ The interface follows Google's Material Design 3 principles:
 *   ✅ Edge 90+
 *   ✅ Opera 76+
 
+🤝 Contributing
+-------------
+
+We welcome contributions! Here's how you can help:
+
+1. **Fork the repository**
+2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
+3. **Commit your changes**: `git commit -m 'Add amazing feature'`
+4. **Push to branch**: `git push origin feature/amazing-feature`
+5. **Open a Pull Request**
+
 📝 License
 --------
 
 This project is open source and available under the MIT License.
-4.  Optionally, specify a site in the `Site` input field.
-5.  Choose a sorting option from the `Sort By` dropdown.
-6.  Click the `Search` button to perform the search.
-
-Installation
-------------
-
-To run the project locally:
-
-1.  Clone the repository:
-
-    git clone https://github.com/smaxiso/google-search-pro.git
-
-3.  Navigate into the project directory:
-
-    cd google-search-pro
-
-5.  Open `index.html` in your web browser to view the application.
-
-Contributing
-------------
-
-If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
-
-License
--------
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 

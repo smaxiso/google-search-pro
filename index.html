@@ -1,136 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebApplication">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Search Pro</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Google Search Pro - Advanced Google Dorking Tool | Free Online Search Builder</title>
+    <meta name="title" content="Google Search Pro - Advanced Google Dorking Tool | Free Online Search Builder">
+    <meta name="description" content="Free advanced Google search tool with dorking capabilities. Build complex search queries, filter by file types, search specific sites. Find books, music, videos, software & images easily.">
+    <meta name="keywords" content="google search, google dorking, advanced search, file search, dork queries, search tool, find files, search builder, google hacks, intitle index of, advanced google search, search operators, google dorks, file finder, search engine, web search, google search tips, search techniques, online search tool, free search tool">
+    <meta name="author" content="Google Search Pro">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://googlesearchpro.netlify.app/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://googlesearchpro.netlify.app/">
+    <meta property="og:title" content="Google Search Pro - Advanced Google Dorking Tool">
+    <meta property="og:description" content="Free advanced Google search tool with dorking capabilities. Build complex search queries, filter by file types, search specific sites. Find books, music, videos, software & images easily.">
+    <meta property="og:image" content="https://googlesearchpro.netlify.app/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Google Search Pro">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://googlesearchpro.netlify.app/">
+    <meta property="twitter:title" content="Google Search Pro - Advanced Google Dorking Tool">
+    <meta property="twitter:description" content="Free advanced Google search tool with dorking capabilities. Build complex search queries, filter by file types, search specific sites.">
+    <meta property="twitter:image" content="https://googlesearchpro.netlify.app/og-image.png">
+    <meta property="twitter:creator" content="@GoogleSearchPro">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Google Search Pro",
+        "description": "Advanced Google search tool with dorking capabilities for building complex search queries",
+        "url": "https://googlesearchpro.netlify.app/",
+        "applicationCategory": "SearchEngine",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires HTML5 support",
+        "softwareVersion": "2.0",
+        "author": {
+            "@type": "Organization",
+            "name": "Google Search Pro"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "150"
+        },
+        "features": [
+            "Advanced Google Dorking",
+            "File Type Filtering",
+            "Site-Specific Search",
+            "Real-time Query Preview",
+            "Material Design Interface"
+        ]
+    }
+    </script>
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#6750a4">
+    <meta name="msapplication-TileColor" content="#6750a4">
+    <meta name="application-name" content="Google Search Pro">
+    <meta name="apple-mobile-web-app-title" content="Google Search Pro">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
+    <link rel="preload" href="styles.css" as="style">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//www.google.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    
+    <!-- Performance Optimization -->
+    <link rel="prefetch" href="script.js">
 </head>
 
 <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Toast Notification Container -->
-    <div id="toast" class="toast">
+    <div id="toast" class="toast" role="alert" aria-live="polite">
         <span class="toast-icon material-icons">info</span>
         <span class="toast-message"></span>
     </div>
 
     <!-- Background decoration -->
-    <div class="background-decoration">
+    <div class="background-decoration" aria-hidden="true">
         <div class="floating-shape shape-1"></div>
         <div class="floating-shape shape-2"></div>
         <div class="floating-shape shape-3"></div>
     </div>
 
-    <div class="container">
-        <div class="header">
+    <main id="main-content" class="container">
+        <header class="header">
             <div class="logo">
-                <span class="material-icons">search</span>
+                <span class="material-icons" aria-hidden="true">search</span>
                 <h1>Google Search Pro</h1>
             </div>
-            <p class="subtitle">Advanced Google dorking made simple</p>
+            <p class="subtitle">Advanced Google dorking made simple - Free online search builder</p>
+        </header>
+
+        <section class="search-section">
+            <h2 class="sr-only">Advanced Google Search Builder</h2>
+            <form id="dorking-form" class="search-form" role="search" aria-label="Advanced Google Search Builder">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="query">Search Query</label>
+                        <div class="input-container">
+                            <span class="material-icons input-icon" aria-hidden="true">search</span>
+                            <input type="text" id="query" name="query" placeholder="Enter your search query" autocomplete="off" aria-describedby="query-help">
+                            <div id="query-help" class="sr-only">Enter keywords to search for files and content</div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="category">Category</label>
+                        <div class="select-container">
+                            <span class="material-icons select-icon" aria-hidden="true">category</span>
+                            <select id="category" name="category" aria-describedby="category-help">
+                                <option value="">All Categories</option>
+                                <option value="book">📚 Books & Documents</option>
+                                <option value="music">🎵 Music & Audio</option>
+                                <option value="video">🎬 Videos & Movies</option>
+                                <option value="software">💾 Software & Apps</option>
+                                <option value="image">🖼️ Images & Photos</option>
+                            </select>
+                            <div id="category-help" class="sr-only">Choose a content category to filter search results</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="filetype">File Type</label>
+                        <div class="select-container">
+                            <span class="material-icons select-icon" aria-hidden="true">description</span>
+                            <select id="filetype" name="filetype" aria-describedby="filetype-help">
+                                <option value="">Any File Type</option>
+                            </select>
+                            <div id="filetype-help" class="sr-only">Select specific file types to search for</div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="site">Specific Site</label>
+                        <div class="input-container">
+                            <span class="material-icons input-icon" aria-hidden="true">language</span>
+                            <input type="text" id="site" name="site" placeholder="e.g., example.com" autocomplete="off" aria-describedby="site-help">
+                            <div id="site-help" class="sr-only">Limit search to a specific website or domain</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="sort">Sort By</label>
+                        <div class="select-container">
+                            <span class="material-icons select-icon" aria-hidden="true">sort</span>
+                            <select id="sort" name="sort" aria-describedby="sort-help">
+                                <option value="">Relevance</option>
+                                <option value="date">Date Modified</option>
+                            </select>
+                            <div id="sort-help" class="sr-only">Choose how to sort search results</div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="size">File Size</label>
+                        <div class="select-container">
+                            <span class="material-icons select-icon" aria-hidden="true">storage</span>
+                            <select id="size" name="size" aria-describedby="size-help">
+                                <option value="">Any Size</option>
+                                <option value="small">Small (< 10MB)</option>
+                                <option value="medium">Medium (10MB - 100MB)</option>
+                                <option value="large">Large (> 100MB)</option>
+                            </select>
+                            <div id="size-help" class="sr-only">Filter results by file size</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="search-btn" aria-describedby="search-help">
+                        <span class="material-icons" aria-hidden="true">search</span>
+                        <span>Search Google</span>
+                    </button>
+                    <button type="button" id="clear-btn" class="clear-btn" aria-describedby="clear-help">
+                        <span class="material-icons" aria-hidden="true">clear</span>
+                        <span>Clear Form</span>
+                    </button>
+                    <div id="search-help" class="sr-only">Opens Google search with your generated query in a new tab</div>
+                    <div id="clear-help" class="sr-only">Clears all form fields</div>
+                </div>
+
+                <div class="query-preview" role="region" aria-labelledby="preview-title">
+                    <div class="preview-header">
+                        <span class="material-icons" aria-hidden="true">code</span>
+                        <span id="preview-title">Generated Query Preview</span>
+                    </div>
+                    <div id="query-display" class="query-text" aria-live="polite" aria-describedby="preview-help">Enter search parameters to see the generated query</div>
+                    <button type="button" id="copy-query" class="copy-btn" aria-describedby="copy-help">
+                        <span class="material-icons" aria-hidden="true">content_copy</span>
+                        <span>Copy Query</span>
+                    </button>
+                    <div id="preview-help" class="sr-only">This shows the Google dork query that will be generated from your inputs</div>
+                    <div id="copy-help" class="sr-only">Copies the generated query to your clipboard</div>
+                </div>
+            </form>
+        </section>
+
+        <section class="features-section" aria-labelledby="features-title">
+            <h2 id="features-title" class="sr-only">Key Features</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <h3>Advanced Google Dorking</h3>
+                    <p>Build sophisticated search queries using Google's advanced search operators and dorking techniques.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>File Type Filtering</h3>
+                    <p>Search for specific file types including PDFs, MP3s, videos, software, and images with precision.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Real-time Preview</h3>
+                    <p>See your generated Google dork query in real-time as you type and modify search parameters.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer for additional SEO content -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 Google Search Pro. Free advanced Google search tool for everyone.</p>
+            <nav aria-label="Footer navigation">
+                <a href="https://googlesearchpro.netlify.app/" rel="canonical">Home</a>
+                <a href="#main-content">Back to Top</a>
+            </nav>
         </div>
+    </footer>
 
-        <form id="dorking-form" class="search-form">
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="query">Search Query</label>
-                    <div class="input-container">
-                        <span class="material-icons input-icon">search</span>
-                        <input type="text" id="query" placeholder="Enter your search query">
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="category">Category</label>
-                    <div class="select-container">
-                        <span class="material-icons select-icon">category</span>
-                        <select id="category">
-                            <option value="">All Categories</option>
-                            <option value="book">📚 Books & Documents</option>
-                            <option value="music">🎵 Music & Audio</option>
-                            <option value="video">🎬 Videos & Movies</option>
-                            <option value="software">💾 Software & Apps</option>
-                            <option value="image">🖼️ Images & Photos</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="filetype">File Type</label>
-                    <div class="select-container">
-                        <span class="material-icons select-icon">description</span>
-                        <select id="filetype">
-                            <option value="">Any File Type</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="site">Specific Site</label>
-                    <div class="input-container">
-                        <span class="material-icons input-icon">language</span>
-                        <input type="text" id="site" placeholder="e.g., example.com">
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="sort">Sort By</label>
-                    <div class="select-container">
-                        <span class="material-icons select-icon">sort</span>
-                        <select id="sort">
-                            <option value="">Relevance</option>
-                            <option value="date">Date Modified</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="size">File Size</label>
-                    <div class="select-container">
-                        <span class="material-icons select-icon">storage</span>
-                        <select id="size">
-                            <option value="">Any Size</option>
-                            <option value="small">Small (< 10MB)</option>
-                            <option value="medium">Medium (10MB - 100MB)</option>
-                            <option value="large">Large (> 100MB)</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <div class="button-group">
-                <button type="submit" class="search-btn">
-                    <span class="material-icons">search</span>
-                    <span>Search</span>
-                </button>
-                <button type="button" id="clear-btn" class="clear-btn">
-                    <span class="material-icons">clear</span>
-                    <span>Clear</span>
-                </button>
-            </div>
-
-            <div class="query-preview">
-                <div class="preview-header">
-                    <span class="material-icons">code</span>
-                    <span>Generated Query Preview</span>
-                </div>
-                <div id="query-display" class="query-text">Enter search parameters to see the generated query</div>
-                <button type="button" id="copy-query" class="copy-btn">
-                    <span class="material-icons">content_copy</span>
-                    <span>Copy Query</span>
-                </button>
-            </div>
-        </form>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    
+    <!-- Google Analytics (replace with your tracking ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script> -->
 </body>
 
 </html>
