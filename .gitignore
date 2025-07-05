@@ -239,7 +239,7 @@ replay_pid*
 *.dll
 *.pdb
 *.cache
-*.xml
+# *.xml
 bin/
 obj/
 packages/
